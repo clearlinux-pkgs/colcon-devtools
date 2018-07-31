@@ -4,7 +4,7 @@
 #
 Name     : colcon-devtools
 Version  : 0.2.1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/1d/ac/8f67927a04e8c05fb9d7abca0f5954382e92d136e00c9d961a8875b84bd7/colcon-devtools-0.2.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1d/ac/8f67927a04e8c05fb9d7abca0f5954382e92d136e00c9d961a8875b84bd7/colcon-devtools-0.2.1.tar.gz
 Summary  : Extension for colcon to provide information about all extension points and extensions
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: colcon-devtools-python3
 Requires: colcon-devtools-python
+Requires: colcon-core
 BuildRequires : buildreq-distutils3
 
 %description
@@ -43,7 +44,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532980561
+export SOURCE_DATE_EPOCH=1533002456
 python3 setup.py build -b py3
 
 %install
