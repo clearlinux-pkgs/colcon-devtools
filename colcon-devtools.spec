@@ -4,7 +4,7 @@
 #
 Name     : colcon-devtools
 Version  : 0.2.2
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/e4/ca/02b25d78d614f174ae235d2542f4dbad327c1f08cdf18a7c9b2eb7029b3d/colcon-devtools-0.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e4/ca/02b25d78d614f174ae235d2542f4dbad327c1f08cdf18a7c9b2eb7029b3d/colcon-devtools-0.2.2.tar.gz
 Summary  : Extension for colcon to provide information about all extension points and extensions
