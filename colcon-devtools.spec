@@ -4,7 +4,7 @@
 #
 Name     : colcon-devtools
 Version  : 0.2.2
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/e4/ca/02b25d78d614f174ae235d2542f4dbad327c1f08cdf18a7c9b2eb7029b3d/colcon-devtools-0.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e4/ca/02b25d78d614f174ae235d2542f4dbad327c1f08cdf18a7c9b2eb7029b3d/colcon-devtools-0.2.2.tar.gz
 Summary  : Extension for colcon to provide information about all extension points and extensions
@@ -17,10 +17,7 @@ BuildRequires : buildreq-distutils3
 BuildRequires : colcon-core
 
 %description
-colcon-devtools
 ===============
-
-An extension for `colcon-core <https://github.com/colcon/colcon-core>`_ to provide information about the plugin system.
 
 %package python
 Summary: python components for the colcon-devtools package.
@@ -35,7 +32,8 @@ python components for the colcon-devtools package.
 Summary: python3 components for the colcon-devtools package.
 Group: Default
 Requires: python3-core
-Provides: pypi(colcon-devtools)
+Provides: pypi(colcon_devtools)
+Requires: pypi(colcon_core)
 
 %description python3
 python3 components for the colcon-devtools package.
@@ -50,8 +48,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582909366
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583527716
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
